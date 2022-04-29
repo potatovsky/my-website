@@ -1,0 +1,21 @@
+@import "Constants.scss";
+
+.about {
+    // display: flex;
+    // align-items: center;
+    padding: 10rem 0 2rem 0;
+    font-weight: bold;
+
+    .about-text {
+        flex: 1;
+        text-align: center;
+        padding-right: 2rem;
+        flex: 1;
+        h1 {
+            font-size: 2rem;
+            span {
+                color: $primary-color;
+            }
+        }
+    }
+}

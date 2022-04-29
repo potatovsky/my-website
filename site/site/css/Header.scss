@@ -6,21 +6,21 @@
     position: sticky;
     align-items: center;
     top: 0;
+    z-index: 1;
 
     background-color: $primary-color-transparent;
     padding: 2rem 2rem 2rem 2rem;
 
+    a:hover {
+        color: $hover-color;
+    }
+    a {
+        color: $header-text-color;
+        text-decoration: none;
+    }
+
     .title {
         font-size: 2rem;
-        
-        a:hover {
-            color: $hover-color;
-        }
-        a {
-            color: $text-color;
-            text-decoration: none;
-        }
-        
     }
 
     .navbar {
@@ -32,14 +32,6 @@
 
             li {
                 padding: 0 1rem 0 1rem;
-
-                a:hover {
-                    color: $hover-color;
-                }
-                a {
-                    color: $text-color;
-                    text-decoration: none;
-                }
             }
         }
     }

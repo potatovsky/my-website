@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/Header.scss";
 
-const Accordion = () => {
+const Header = () => {
 
   return (
     <div className="header">
@@ -10,8 +10,8 @@ const Accordion = () => {
       </div>
       <nav className="navbar">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="">Resume</a></li>
           <li><a href="">Contact</a></li>
         </ul>
@@ -20,4 +20,4 @@ const Accordion = () => {
   );
 };
 
-export default Accordion;
+export default Header;

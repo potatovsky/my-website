@@ -1,17 +1,18 @@
 import React from "react";
 import '../css/Greeting.scss';
+import Image from "./Image";
 import ethan from '../images/ethan-in-787.jpg'
 
 const Greeting = () => {
+    const desc = "Fun project with United Airlines!";
+
     return (
-        <div className="greeting">
+        <div className="greeting" id="home">
             <div className="greeting-text">
-                <h1>Hello! I&apos;m Ethan</h1>
-                <h2>Software Engineer based in Chicago, IL</h2>
+                <h1>Hello! I&apos;m <span>Ethan</span></h1>
+                <h2><span>Software Engineer</span> based in Chicago, IL</h2>
             </div>
-            <div className="image">
-                <img src={ethan} alt="Ethan in a 787" width={600}></img>
-            </div>
+            <Image image={ethan} desc={desc} />
         </div>
     );
   };
