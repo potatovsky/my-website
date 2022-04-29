@@ -29,6 +29,9 @@ body {
 .highlight {
 	color: $primary-color;
 }
+.cursor {
+	animation: blinker 1s ease infinite;
+}
 
 .body {
 	margin: 0 $leftRightMargin 0 $leftRightMargin;

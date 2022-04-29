@@ -1,0 +1,33 @@
+@import "Constants.scss";
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.projects {
+
+    padding: 10rem 0 2rem 0;
+    font-weight: bold;
+
+    a:hover {
+        color: $hover-color;
+    }
+    a {
+        color: $primary-color;
+    }
+
+    .projects-text {
+        text-align: center;
+        padding-right: 2rem;
+        flex: 1;
+        h1 {
+            font-size: 3rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            padding: 2rem 0 1rem 0;
+        }
+    }
+}
