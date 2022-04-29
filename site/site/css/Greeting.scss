@@ -15,6 +15,10 @@
             font-size: 5rem;
             span {
                 color: $primary-color;
+
+                .Typewriter {
+                    display: inline;
+                }
             }
         }
         h2 {
