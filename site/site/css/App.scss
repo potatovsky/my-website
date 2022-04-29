@@ -26,6 +26,9 @@ body {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	color: $text-color;
 }
+.highlight {
+	color: $primary-color;
+}
 
 .body {
 	margin: 0 $leftRightMargin 0 $leftRightMargin;

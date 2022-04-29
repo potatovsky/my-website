@@ -1,21 +1,39 @@
 @import "Constants.scss";
 
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
 .about {
     // display: flex;
     // align-items: center;
     padding: 10rem 0 2rem 0;
     font-weight: bold;
 
+    a:hover {
+        color: $hover-color;
+    }
+    a {
+        color: $primary-color;
+    }
+
     .about-text {
-        flex: 1;
         text-align: center;
         padding-right: 2rem;
         flex: 1;
         h1 {
-            font-size: 2rem;
+            font-size: 3rem;
             span {
-                color: $primary-color;
+                .cursor {
+                    animation: blinker 1s ease infinite;
+                }
             }
+        }
+        h2 {
+            font-size: 1.5rem;
+            padding: 2rem 0 1rem 0;
         }
     }
 }

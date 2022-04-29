@@ -1,12 +1,5 @@
 @import "Constants.scss";
 
-
-@keyframes blinker {
-    50% {
-        opacity: 0;
-    }
-}
-
 .image {
     position: relative;
 
@@ -47,9 +40,5 @@
 
     .image-caption {
         opacity: 1;
-
-        .blink-text .cursor {
-            animation: blinker 1s ease infinite;
-        }
     }
 }
