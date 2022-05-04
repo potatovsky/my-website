@@ -5,6 +5,7 @@ import Typewriter from 'typewriter-effect';
 interface ImageProps {
     image: "*.jpg";
     desc: string;
+    maxWidth: number;
 }
 
 const Image = (props : ImageProps) => {
@@ -22,7 +23,7 @@ const Image = (props : ImageProps) => {
 
     return (
         <div className="image">
-            <img src={props.image} alt="Ethan in a 787" width={600}></img>
+            <img src={props.image} alt="Ethan in a 787" width={props.maxWidth}></img>
             <div className="image-caption">
                 <div className="text">ethan@peterson:~$&nbsp;
                     {element}

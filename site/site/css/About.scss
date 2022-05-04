@@ -9,7 +9,6 @@
 .about {
 
     padding: 10rem 0 2rem 0;
-    font-weight: bold;
 
     a:hover {
         color: $hover-color;
@@ -20,10 +19,10 @@
 
     .about-text {
         text-align: center;
-        padding-right: 2rem;
         flex: 1;
         h1 {
             font-size: 3rem;
+            font-weight: bold;
         }
         h2 {
             font-size: 1.5rem;
@@ -44,6 +43,7 @@
                     color: $msu-green;
                     width: 60%;
                     padding: 1rem 1rem 1rem 1rem;
+                    font-weight: bold;
                 }
             }
             

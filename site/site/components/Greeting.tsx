@@ -25,9 +25,9 @@ const Greeting = () => {
         <div className="greeting" id="home">
             <div className="greeting-text">
                 <h1>Hello! I&apos;m <span className="highlight">{element}</span></h1>
-                <h2><span className="highlight">Software Engineer</span> based in Chicago, IL</h2>
+                <h2><span className="highlight">Software Engineer</span> based in the Chicagoland area</h2>
             </div>
-            <Image image={ethan} desc={desc} />
+            <Image image={ethan} desc={desc} maxWidth={600}/>
         </div>
     );
   };
