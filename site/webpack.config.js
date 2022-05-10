@@ -41,6 +41,10 @@ module.exports = {
         test: /\.(jpe?g|png|gif|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
         loader: "url-loader",
       },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
     ],
   },
 

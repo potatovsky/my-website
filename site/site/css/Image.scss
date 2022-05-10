@@ -1,35 +1,43 @@
 @import "Constants.scss";
 
+
+// @media only screen and (min-width: calc($minScreenSize + 1px)) {
 .image {
+
     position: relative;
 
     transition: 1s;
     transform: scale(1);
+    max-width: 100%;
 
     img {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         border-radius: 8px;
+        display: block;
+        margin: auto;
+        max-width: 100%;
     }
 
     .image-caption {
         transition: .5s ease;
         opacity: 0;
         position: absolute;
-        top: 85%;
+        top: 80%;
         left: 50%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
 
         color: white;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: monospace;
+        font-size: 1.1rem;
         background-color: $terminal-color;
         width: calc(85% - 2rem);
-        height: calc(20% - 2rem);
+        height: calc(30% - 2rem);
         padding: 1rem 1rem 1rem 1rem;
         border-radius: 8px;
 
         .text .Typewriter {
-           display: inline;
+            display: inline;
         }
     }
 }
@@ -42,3 +50,54 @@
         opacity: 1;
     }
 }
+// }
+
+// @media only screen and (max-width: $minScreenSize) {
+//     .image {
+
+//         position: relative;
+    
+//         transition: 1s;
+//         transform: scale(1);
+//         max-width: 100%;
+    
+//         img {
+//             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//             border-radius: 8px;
+//             display: block;
+//             margin: auto;
+//             max-width: 100%;
+//         }
+    
+//         .image-caption {
+//             transition: .5s ease;
+//             opacity: 0;
+//             position: absolute;
+//             top: 80%;
+//             left: 50%;
+//             transform: translate(-50%, -50%);
+//             -ms-transform: translate(-50%, -50%);
+    
+//             color: white;
+//             font-family: 'Courier New', Courier, monospace;
+//             background-color: $terminal-color;
+//             width: calc(80% - 2rem);
+//             height: calc(30% - 2rem);
+//             padding: 1rem 1rem 1rem 1rem;
+//             border-radius: 8px;
+    
+//             .text .Typewriter {
+//                display: inline;
+//             }
+//         }
+//     }
+    
+//     .image:hover {
+//         transition: 1s;
+//         transform: scale(1.05);
+    
+//         .image-caption {
+//             opacity: 1;
+//         }
+//     }
+// }

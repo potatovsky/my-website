@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect';
 interface ImageProps {
     image: "*.jpg";
     desc: string;
-    maxWidth: number;
+    maxWidth: string;
 }
 
 const Image = (props : ImageProps) => {
@@ -22,8 +22,12 @@ const Image = (props : ImageProps) => {
     />
 
     return (
-        <div className="image">
-            <img src={props.image} alt="Ethan in a 787" width={props.maxWidth}></img>
+        <div className="image" style={
+            {
+              "--width-max": props.maxWidth,
+            } as React.CSSProperties
+          }>
+            <img src={props.image} alt="Ethan in a 787"></img>
             <div className="image-caption">
                 <div className="text">ethan@peterson:~$&nbsp;
                     {element}

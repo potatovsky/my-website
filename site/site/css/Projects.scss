@@ -6,47 +6,97 @@
     }
 }
 
-.projects {
+@media only screen and (min-width: calc($minScreenSize + 1px)) {
+    .projects {
 
-    padding: 10rem 0 2rem 0;
-
-    a:hover {
-        color: $hover-color;
-    }
-    a {
-        color: $primary-color;
-    }
-
-    .projects-text {
-        text-align: center;
-        padding: 0 0 2rem 0;
-        flex: 1;
-        h1 {
-            font-size: 3rem;
-            font-weight: bold;
+        padding: 10rem 0 2rem 0;
+    
+        a:hover {
+            color: $hover-color;
         }
-        h2 {
-            font-size: 1.5rem;
-            padding: 2rem 0 1rem 0;
+        a {
+            color: $primary-color;
         }
-    }
-
-    .project {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .project-desc {
-            padding-left: 3rem;
-
+    
+        .projects-text {
+            text-align: center;
+            padding: 0 0 2rem 0;
+            flex: 1;
             h1 {
-                font-size: 2rem;
+                font-size: 3rem;
+                font-weight: bold;
             }
-
-            ul {
+            h2 {
                 font-size: 1.5rem;
-                padding: 1rem 0 0 2rem;
-                list-style-type: '✈ ';
+                padding: 2rem 0 1rem 0;
+            }
+        }
+    
+        .project {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            .project-desc {
+                padding-left: 3rem;
+    
+                h1 {
+                    font-size: 2rem;
+                }
+    
+                ul {
+                    font-size: 1.5rem;
+                    padding: 1rem 0 0 2rem;
+                    list-style-type: '✈ ';
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $minScreenSize) {
+    .projects {
+
+        padding: 10rem 0 2rem 0;
+    
+        a:hover {
+            color: $hover-color;
+        }
+        a {
+            color: $primary-color;
+        }
+    
+        .projects-text {
+            text-align: center;
+            padding: 0 0 2rem 0;
+            flex: 1;
+            h1 {
+                font-size: 3rem;
+                font-weight: bold;
+            }
+            h2 {
+                font-size: 1.5rem;
+                padding: 2rem 0 1rem 0;
+            }
+        }
+    
+        .project {
+            align-items: center;
+            justify-content: center;
+    
+            .project-desc {
+                padding-left: 3rem;
+                padding-top: 2rem;
+    
+                h1 {
+                    font-size: 2rem;
+                }
+    
+                ul {
+                    font-size: 1.5rem;
+                    padding: 1rem 0 0 2rem;
+                    list-style-type: '✈ ';
+                }
             }
         }
     }

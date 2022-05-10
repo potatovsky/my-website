@@ -27,7 +27,7 @@ const Greeting = () => {
                 <h1>Hello! I&apos;m <span className="highlight">{element}</span></h1>
                 <h2><span className="highlight">Software Engineer</span> based in the Chicagoland area</h2>
             </div>
-            <Image image={ethan} desc={desc} maxWidth={600}/>
+            <Image image={ethan} desc={desc} maxWidth={"40%"}/>
         </div>
     );
   };

@@ -1,0 +1,36 @@
+.video-container {
+    
+    background-color: white;
+    padding: 6vw 6vw 6vw 6vw;
+    border-radius: 12px;
+    z-index: 3;
+
+    .video-responsive {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    }
+      
+    .video-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+.video-background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 2;
+
+    width: 75%;
+
+    background-color: #000000bb;
+    padding: 100vw 100vw 100vw 100vw;
+}

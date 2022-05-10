@@ -1,30 +1,60 @@
 @import "Constants.scss";
 
-.greeting {
-    display: flex;
-    align-items: center;
-    padding: 5rem 0 2rem 0;
-    
-    justify-content: center;
+@media only screen and (min-width: calc($minScreenSize + 1px)) {
+    .greeting {
+        display: flex;
+        align-items: center;
+        padding: 5rem 0 2rem 0;
+        
+        justify-content: center;
 
-    .greeting-text {
-        padding-right: 2rem;
-        text-align: right;
-        font-weight: bold;
+        .greeting-text {
+            padding-right: 2rem;
+            text-align: right;
+            font-weight: bold;
 
-        h1 {
-            font-size: 5rem;
-            span {
-                .Typewriter {
-                    display: inline;
+            h1 {
+                font-size: 5rem;
+                span {
+                    .Typewriter {
+                        display: inline;
+                    }
                 }
             }
+            h2 {
+                color: $text-secondary-color;
+                font-size: 2.5rem;
+                font-style: italic;
+                padding-top: 1rem;
+            }
         }
-        h2 {
-            color: $text-secondary-color;
-            font-size: 2.5rem;
-            font-style: italic;
-            padding-top: 1rem;
+    }
+}
+
+// For small screens
+@media only screen and (max-width: $minScreenSize) {
+    .greeting {
+        padding: 5rem 0 2rem 0;
+    
+        .greeting-text {
+            text-align: center;
+            font-weight: bold;
+            padding-bottom: 2rem;
+    
+            h1 {
+                font-size: 5rem;
+                span {
+                    .Typewriter {
+                        display: inline;
+                    }
+                }
+            }
+            h2 {
+                color: $text-secondary-color;
+                font-size: 2.5rem;
+                font-style: italic;
+                padding-top: 1rem;
+            }
         }
     }
 }
