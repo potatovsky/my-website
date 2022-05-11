@@ -15,7 +15,7 @@ const Projects = () => {
                 <h1>Latest <span className="highlight">Projects<span className="cursor">|</span></span></h1>
             </div>
             <div className="project">
-                <Image image={plane} desc={desc} maxWidth={"30%"}/>
+                <Image image={plane} desc={desc} maxWidth={"500px"}/>
                 <div className="project-desc">
                     <h1>United Airlines</h1>
                     <h2>January 2022 - May 2022</h2>

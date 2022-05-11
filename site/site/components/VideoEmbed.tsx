@@ -9,7 +9,11 @@ interface VideoEmbedProps {
 const VideoEmbed = ({ embedId, setEnable } : VideoEmbedProps) => {
 
     return (
-        <div className="video-background" onClick={() => {setEnable(false);}}>
+        <div className="video-background" onClick={(event) => {
+            if(event.target === event.currentTarget) {
+                setEnable(false);
+            }
+        }}>
             <div className="video-container">
                 <div className="video-responsive">
                     <iframe
