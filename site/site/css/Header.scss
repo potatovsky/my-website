@@ -1,5 +1,16 @@
 @import "Constants.scss";
 
+@keyframes growDown {
+    0% {
+        opacity: 0;
+        transform: translate(0, -100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0%);
+    }
+  }
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -9,7 +20,7 @@
     z-index: 1;
 
     background-color: $primary-color-transparent;
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 0 2rem 0 2rem;
 
     a:hover {
         color: $hover-color;
@@ -32,9 +43,19 @@
             list-style: none;
             display: flex;
 
-            li {
-                padding: 0 1rem 0 1rem;
+            li a {
+                padding: 2rem 1rem 2rem 1rem;
+                display: inline-block;
             }
         }
     }
+}
+
+.header-drawer {
+    position: absolute;
+    transition: 1s;
+    // animation: growDown 300ms ease-in-out forwards;
+
+    background-color: $primary-color;
+    width: 7rem;
 }
